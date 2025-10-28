@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos</title>
+    <!-- Carga de Tailwind CSS para el estilo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define la fuente Inter para un estilo limpio y moderno */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+
+    <!-- Contenedor principal centrado -->
+    <div class="text-center p-8 rounded-xl shadow-2xl bg-gray-800">
+        <!-- Título principal -->
+        <h1 class="text-6xl sm:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-600 animate-pulse">
+            Bienvenidos
+        </h1>
+        <!-- Subtítulo sutil y adaptable -->
+        <p class="mt-4 text-gray-400 text-lg sm:text-xl">
+            ¡Estás en la página de prueba!
+        </p>
+    </div>
+
+    <!-- Script para la animación de pulsación (opcional, solo estético) -->
+    <script>
+        // Clase Tailwind que hace que el texto pulse suavemente
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'pulse': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        pulse: {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.85 },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
